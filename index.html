@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tebak angka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="icon">
+            <img src="media/iconZain.png" alt="iconZain">
+            <h2>Angka BOOM</h2>
+        </div>
+
+        <div class="navbarNav">
+            <a href="https://wa.me/6281246053078">contact</a>
+            <a href="https://www.instagram.com/i.am_zain__/">instagram</a>
+            <a href="aboutMe.html">about me</a>
+        </div>
+    </div>
+
+    <input type="text" id="caution2" class="caution2" readonly>
+    <input type="text" id="caution" class="caution" readonly>
+    <input type="number" id="display" class="display" readonly>
+    <div class="buttonAll">
+        <button class="button" onclick="inputValue(1)">1</button>    
+        <button class="button" onclick="inputValue(2)">2</button>    
+        <button class="button" onclick="inputValue(3)">3</button>    
+        <button class="button" onclick="inputValue(4)">4</button>    
+        <button class="button" onclick="inputValue(5)">5</button>    
+        <button class="button" onclick="inputValue(6)">6</button>    
+        <button class="button" onclick="inputValue(7)">7</button>    
+        <button class="button" onclick="inputValue(8)">8</button>    
+        <button class="button" onclick="inputValue(9)">9</button>    
+        <button class="button" onclick="inputValue(0)">0</button>  
+        <button class="buttonOperasi" onclick="displayClear()">Ulang</button>  
+        <button class="buttonOperasi" onclick="jalan()">Oke</button>  
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
