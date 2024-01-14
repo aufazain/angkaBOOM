@@ -1,4 +1,5 @@
-*{
+/* CSS file for Tebak Angka */
+* {
     margin: 0;
     padding: 0;
 }
@@ -11,6 +12,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 60px;
+    padding: 5px;
 }
 
 /* navbar */
@@ -32,28 +35,30 @@ body {
     box-shadow: 0px -7px 20px black;
 }
 
-.icon{
+.icon {
     display: flex;
     align-items: center;
+    color: #EAEAEA;
 }
 
-.icon img{
+.icon img {
     height: 4rem;
     margin-right: 1rem;
 }
 
-.navbarNav{
+.navbarNav {
     display: flex;
 }
 
-.navbarNav a{
+.navbarNav a {
     text-decoration: none;
     color: #EAEAEA;
     margin-left: 2rem;
     font-size: 1rem;
     font-weight: 700;
 }
-.navbarNav a::after{
+
+.navbarNav a::after {
     content: "";
     margin-top: 2px;
     display: block;
@@ -61,30 +66,65 @@ body {
     transform: scaleX(0);
 }
 
-.navbarNav a:hover::after{
+.navbarNav a:hover::after {
     transform: scaleX(1.1);
     transition: linear 0.2s;
 }
 
 @media (max-width: 600px) {
-    .navbar{
+    body {
+        margin-top: 25px;
+    }
+
+    .navbar {
         font-size: x-small;
         padding-left: 0.8rem;
         padding-right: 0.8rem;
     }
-    .navbarNav a{
+
+    .navbarNav a {
         font-size: x-small;
         margin-left: 1rem;
     }
-    .icon img{
+
+    .icon img {
         height: 2rem;
     }
-    .icon h3{
+
+    .icon h3 {
         font-size: xx-small;
     }
-    .icon{
+
+    .icon {
         align-items: center;
     }
+}
+
+/* masuk ke body */
+
+
+.l1 {
+    color: #EAEAEA;
+    margin: 5px;
+}
+
+.level {
+    color: #EAEAEA;
+    margin: 5px;
+    font-size: x-large;
+    font-weight: 1000;
+}
+
+.l2 {
+    align-self: flex-start;
+    color: #EAEAEA;
+    margin-left: 20px;
+    margin-bottom: 25px;
+
+}
+
+.levelBar{
+    width: 230px;
 }
 
 .display {
@@ -104,6 +144,7 @@ body {
     background-color: #fecc00;
     border-radius: 25px;
     color: #1D293A;
+    border: none;
 }
 
 .caution2 {
@@ -133,13 +174,13 @@ body {
 }
 
 
-.buttonAll{
+.buttonAll {
     display: flex;
     width: 240px;
     flex-wrap: wrap;
 }
 
-.button{
+.button {
     height: 70px;
     width: 70px;
     margin: 5px;
@@ -150,8 +191,8 @@ body {
     border: none;
 }
 
-.button:hover{
-    background-color: #354357c3 ;
+.button:hover {
+    background-color: #354357c3;
 }
 
 .buttonOperasi {
