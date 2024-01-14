@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tebak angka</title>
+    <title>Tebak Angka</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,7 +12,7 @@
     <div class="navbar">
         <div class="icon">
             <img src="media/iconZain.png" alt="iconZain">
-            <h2>Angka BOOM</h2>
+            <h2>Tebak BOOM!!</h2>
         </div>
 
         <div class="navbarNav">
@@ -21,23 +22,31 @@
         </div>
     </div>
 
+    <h3 class="l2" id="currentScore">score saat ini :</h3>
+    <h3 class="level" id="level">level :</h3>
+    <progress class="levelBar" id="taskProgress" max="100"></progress>
+    <h3 class="l1" id="score">kesempatan :</h3>
+
     <input type="text" id="caution2" class="caution2" readonly>
     <input type="text" id="caution" class="caution" readonly>
     <input type="number" id="display" class="display" readonly>
     <div class="buttonAll">
-        <button class="button" onclick="inputValue(1)">1</button>    
-        <button class="button" onclick="inputValue(2)">2</button>    
-        <button class="button" onclick="inputValue(3)">3</button>    
-        <button class="button" onclick="inputValue(4)">4</button>    
-        <button class="button" onclick="inputValue(5)">5</button>    
-        <button class="button" onclick="inputValue(6)">6</button>    
-        <button class="button" onclick="inputValue(7)">7</button>    
-        <button class="button" onclick="inputValue(8)">8</button>    
-        <button class="button" onclick="inputValue(9)">9</button>    
-        <button class="button" onclick="inputValue(0)">0</button>  
-        <button class="buttonOperasi" onclick="displayClear()">Ulang</button>  
-        <button class="buttonOperasi" onclick="jalan()">Oke</button>  
+        <button class="button" onclick="inputValue(1)">1</button>
+        <button class="button" onclick="inputValue(2)">2</button>
+        <button class="button" onclick="inputValue(3)">3</button>
+        <button class="button" onclick="inputValue(4)">4</button>
+        <button class="button" onclick="inputValue(5)">5</button>
+        <button class="button" onclick="inputValue(6)">6</button>
+        <button class="button" onclick="inputValue(7)">7</button>
+        <button class="button" onclick="inputValue(8)">8</button>
+        <button class="button" onclick="inputValue(9)">9</button>
+        <button class="button" onclick="inputValue(0)">0</button>
+        <button class="buttonOperasi" onclick="displayClear()">Ulang</button>
+        <button class="buttonOperasi" onclick="jalan()">Oke</button>
+        <!-- updating tool
+        <button onclick="benar()">auto</button>  -->
     </div>
     <script src="main.js"></script>
 </body>
+
 </html>
