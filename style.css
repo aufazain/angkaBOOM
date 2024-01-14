@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 60px;
+    margin-top: 80px;
     padding: 5px;
 }
 
@@ -73,7 +73,7 @@ body {
 
 @media (max-width: 600px) {
     body {
-        margin-top: 25px;
+        margin-top: 40px;
     }
 
     .navbar {
@@ -98,6 +98,14 @@ body {
     .icon {
         align-items: center;
     }
+
+    .l2 {
+        font-size: medium;
+    }
+
+    .l3{
+        font-size: medium;
+    }
 }
 
 /* masuk ke body */
@@ -120,7 +128,13 @@ body {
     color: #EAEAEA;
     margin-left: 20px;
     margin-bottom: 25px;
+}
 
+.l3 {
+    align-self: flex-start;
+    color: #EAEAEA;
+    margin-left: 20px;
+    margin-bottom: 5px;
 }
 
 .levelBar{
