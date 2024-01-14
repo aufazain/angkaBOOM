@@ -8,6 +8,17 @@ const scoreDisplay = document.getElementById("score")
 const currentScoreDisplay = document.getElementById("currentScore")
 
 
+function gameOver(){
+    level = 1
+    levelRefresh()
+    score = 10*level
+    scoreRefresh()
+    currentScore = 0
+    currentScoreRefresh()
+    progressLevel = 0
+    progressRefresh()
+}
+
 let level = 1
 let levelRefresh = function () {
     levelDisplay.innerHTML = `level : ${level}`
@@ -17,6 +28,11 @@ levelRefresh()
 let score = 10*level
 let scoreRefresh = function(){
     scoreDisplay.innerHTML = `kesempatan : ${score}`
+    if (score < 1){
+        alert("game over")
+        gameOver()
+    }
+
 }
 scoreRefresh()
 
