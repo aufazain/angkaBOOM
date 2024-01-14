@@ -6,6 +6,7 @@ const levelDisplay = document.getElementById("level")
 const progressBar = document.getElementById("taskProgress")
 const scoreDisplay = document.getElementById("score")
 const currentScoreDisplay = document.getElementById("currentScore")
+const highestScoreDisplay = document.getElementById("highest")
 
 
 function gameOver(){
@@ -32,7 +33,6 @@ let scoreRefresh = function(){
         alert("game over")
         gameOver()
     }
-
 }
 scoreRefresh()
 
@@ -61,9 +61,19 @@ progressRefresh()
 
 let currentScore = 0
 let currentScoreRefresh = function(){
-    currentScoreDisplay.innerHTML = `score = ${currentScore}`
+    currentScoreDisplay.innerHTML = `score : ${currentScore}`
 }
 currentScoreRefresh()
+
+let highest = 0
+function highestRefresh(){
+    if (currentScore > highest){
+        highest = currentScore
+    }
+    highestScoreDisplay.innerHTML = `highest : ${highest}`
+}
+highestRefresh()
+
 
 let batasBawah = 0
 let refreshBawah = function () {
@@ -127,7 +137,7 @@ function jalan() {
             currentScoreRefresh()
             levelCheck()
             scoreRefresh()
-
+            highestRefresh()
         }
 
         else if (jawab !== bom) {
